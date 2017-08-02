@@ -22,7 +22,7 @@ img {
 }
 body {
   font-family: "CenturyGothicRegular", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   background: #edece8;
   margin: 0;
 }
@@ -35,18 +35,21 @@ body {
 .main-nav {
 	float: left;
 }
+.main-nav__list {
+	position: relative;
+	padding-left: 0;
+}
 .main-nav__item {
 	list-style: none;
 	display: inline-block;
 	vertical-align: top;
 }
-.list__item {
-	list-style: none;
-}
 .main-nav__link {
-	font-style: 18px;
 	color: #fff;
 	text-decoration: none;
+}
+.list__item {
+	list-style: none;
 }
 																						/* header */
 .page-header {
@@ -74,9 +77,35 @@ body {
 	cursor: pointer;
 }
 .page-header__link {
-	font-size: 18px;
 	color: #fff;
-	padding: 25px 25px 20px 25px;
+	padding: 25px 41px 20px 32px;
+}
+.page-header__link::after {
+	content: "";
+	width: 59px;
+	height: 59px;
+	position: absolute;
+	top: -19px;
+	background-image: url("../img/menu_border.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.page-header__link:last-child::after {
+	content: "";
+	width: 59px;
+	height: 59px;
+	position: absolute;
+	top: -19px;
+	background-image: url("../img/menu_border.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+.header__find {
+	float: right;
+  width: 220px;
+  height: 23px;
+  margin-top: 15px;
 }
 																						/* main */
 .content {
@@ -96,12 +125,66 @@ body {
 	width: 685px;
 	margin-right: 20px;
 }
-.aside {
-	float: left;
-	width: 225px;
+.news {
+	background: #f5f5f5;
+	border: 1px solid #e7e2e3;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.news-container {
+	padding-left: 20px;
+}
+.news__title {
+	background: #e2e0e1;
+	padding: 10px 0 10px 20px;
+	margin: 0;
+	margin-bottom: 5px;
+	border-radius: 10px 10px 0 0;
 }
 .news__img {
 	float: left;
+	padding: 0 10px 0 0;
+}
+.news__text {
+	font-family: Verdana;
+	font-size: 12px;
+}
+.news__link {
+	font-family: Verdana;
+  font-size: 12px;
+  color: #3f282f;
+  margin-bottom: 5px;
+}
+.news-container span {
+	font-family: Verdana;
+	font-size: 12px;
+	color: #000;
+}
+.content-menu {
+	float: left;
+	width: 225px;
+}
+.list {
+	padding-left: 0;
+	border: 1px solid #d7d3d4;
+	border-radius: 20px;
+	background: #e7e2e3;
+	height: 280px;
+	margin: 0;
+}
+.list__title {
+	text-align: center;
+	background: #3f282f;
+	padding: 10px 0;
+	color: #fff;
+	margin: 0 0 10px 0;
+	border-radius: 10px 10px 0 0;
+}
+.list__link {
+	font-size: 14px;
+	line-height: 36px;
+	padding-left: 35px;
+	color: #000;
 }
 																						/* footer */
 
