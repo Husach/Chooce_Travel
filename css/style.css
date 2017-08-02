@@ -1,0 +1,111 @@
+@font-face {
+	font-family: "CenturyGothicRegular";
+	src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot");
+	src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot?#iefix")format("embedded-opentype"),
+		url("../fonts/CenturyGothicRegular/CenturyGothicRegular.woff") format("woff"),
+		url("../fonts/CenturyGothicRegular/CenturyGothicRegular.ttf") format("truetype");
+		font-style: normal;
+		font-weight: normal;
+}
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.container {
+  width: 970px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "CenturyGothicRegular", Arial, sans-serif;
+  font-size: 16px;
+  background: #edece8;
+  margin: 0;
+}
+.btn {
+	background: #69050a;
+	width: 62px;
+	height: 7px;
+	border: 1px solid #736267;
+}
+.main-nav {
+	float: left;
+}
+.main-nav__item {
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+}
+.list__item {
+	list-style: none;
+}
+.main-nav__link {
+	font-style: 18px;
+	color: #fff;
+	text-decoration: none;
+}
+																						/* header */
+.page-header {
+	height: 294px;
+	background-image: url("../img/bg_header.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	margin-top: 11px;
+}
+.page-header__menu {
+	height: 55px;
+	background: #3f282f;
+	border-radius: 10px 10px 0 0;
+	margin-top: 238px;
+}
+.page-header__btn {
+	float: right;
+	margin: 14px 21px;
+	padding: 5px 0 16px 15px;
+	color: #eaeaea;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.page-header__link {
+	font-size: 18px;
+	color: #fff;
+	padding: 25px 25px 20px 25px;
+}
+																						/* main */
+.content {
+	padding: 10px 20px 20px;
+	background: #f7f7f7;
+	border-radius: 0 0 5px 5px;
+}
+.content-slider {
+	height: 270px;
+  background-image: url("../img/slider.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;	
+	margin-bottom: 20px;
+}
+.content-news {
+	float: left;
+	width: 685px;
+	margin-right: 20px;
+}
+.aside {
+	float: left;
+	width: 225px;
+}
+.news__img {
+	float: left;
+}
+																						/* footer */
+
+
+
+
+
