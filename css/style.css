@@ -36,13 +36,10 @@ body {
 	float: left;
 }
 .main-nav__list {
-	position: relative;
 	padding-left: 0;
 }
 .main-nav__item {
 	list-style: none;
-	display: inline-block;
-	vertical-align: top;
 }
 .main-nav__link {
 	color: #fff;
@@ -50,6 +47,10 @@ body {
 }
 .list__item {
 	list-style: none;
+}
+.list__link {
+	font-size: 14px;
+	color: #000;
 }
 																						/* header */
 .page-header {
@@ -61,26 +62,24 @@ body {
 	box-sizing: border-box;
 	margin-top: 11px;
 }
-.page-header__menu {
+.header-menu {
 	height: 55px;
 	background: #3f282f;
 	border-radius: 10px 10px 0 0;
 	margin-top: 238px;
 }
-.page-header__btn {
-	float: right;
-	margin: 14px 21px;
-	padding: 5px 0 16px 15px;
-	color: #eaeaea;
-	font-size: 14px;
-	text-decoration: none;
-	cursor: pointer;
+.header-main-nav__list {
+  position: relative;
 }
-.page-header__link {
+.header-main-nav__item {
+  display: inline-block;
+	vertical-align: top;
+}
+.header-main-nav__link {
 	color: #fff;
 	padding: 25px 41px 20px 32px;
 }
-.page-header__link::after {
+.header-main-nav__link::after {
 	content: "";
 	width: 59px;
 	height: 59px;
@@ -90,7 +89,7 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-.page-header__link:last-child::after {
+.header-main-nav__link:last-child::after {
 	content: "";
 	width: 59px;
 	height: 59px;
@@ -101,6 +100,15 @@ body {
 	background-repeat: no-repeat;
 	margin-right: 10px;
 }
+.page-header__btn {
+	float: right;
+	margin: 14px 21px;
+	padding: 5px 0 16px 15px;
+	color: #eaeaea;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+}
 .header__find {
 	float: right;
   width: 220px;
@@ -109,9 +117,9 @@ body {
 }
 																						/* main */
 .content {
-	padding: 10px 20px 20px;
+	padding: 10px 20px 0 20px;
 	background: #f7f7f7;
-	border-radius: 0 0 5px 5px;
+	border-radius: 0 0 10px 10px;
 }
 .content-slider {
 	height: 270px;
@@ -132,14 +140,23 @@ body {
 	margin-bottom: 20px;
 }
 .news-container {
-	padding-left: 20px;
+	padding-left: 15px;
 }
 .news__title {
+	font-family: Verdana;
+	font-size: 24px;
+	line-height: 36px;
+	color: #3f282f;
 	background: #e2e0e1;
-	padding: 10px 0 10px 20px;
+	padding: 5px 0 0 15px;
 	margin: 0;
-	margin-bottom: 5px;
 	border-radius: 10px 10px 0 0;
+}
+.news__title span {
+	font-size: 12px;
+	line-height: 36px;
+	font-family: Verdana;
+	color: #b8a6ab;
 }
 .news__img {
 	float: left;
@@ -150,10 +167,11 @@ body {
 	font-size: 12px;
 }
 .news__link {
+	display: inline-block;
 	font-family: Verdana;
   font-size: 12px;
   color: #3f282f;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .news-container span {
 	font-family: Verdana;
@@ -164,31 +182,78 @@ body {
 	float: left;
 	width: 225px;
 }
-.list {
-	padding-left: 0;
+.content-menu__list {
+	position: relative;
+	top: -15px;
+	background: #e7e2e3;
 	border: 1px solid #d7d3d4;
 	border-radius: 20px;
-	background: #e7e2e3;
-	height: 280px;
+	height: 265px;
 	margin: 0;
+	padding-left: 0;
+	z-index: 3;
 }
-.list__title {
+.content-menu__title {
+	position: relative;
 	text-align: center;
 	background: #3f282f;
 	padding: 10px 0;
 	color: #fff;
-	margin: 0 0 10px 0;
+	margin: 0;
 	border-radius: 10px 10px 0 0;
+	z-index: 5;
 }
-.list__link {
-	font-size: 14px;
+.content-menu__link {
 	line-height: 36px;
 	padding-left: 35px;
-	color: #000;
+}
+.content-menu__item:first-child {
+	padding-top: 28px;
 }
 																						/* footer */
-
-
-
-
-
+.page-footer {
+	opacity: 0.49;
+}
+.copyright {
+	float: left;
+	width: 395px;
+}
+.copyright__title {
+	display: inline-block;
+	font-size: 26px;
+	color: #716b5b;
+	margin: 30px 0 10px 0;
+}
+.copyright__title:first-letter {
+  color: #a73700;
+}
+.copyright__text {
+	font-family: Verdana;
+	font-size: 14px;
+	margin: 0 0 5px 0;
+}
+.footer-menu {
+	float: left;
+}
+.footer-menu__list {
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+.footer-menu__title {
+	font-size: 24px;
+	width: 315px;
+	margin: 40px 0 0 0;
+}
+.footer__main-nav-title {
+	font-size: 24px;
+	color: #3f282f;
+	margin: 40px 0 0 0;
+}
+.footer__list {
+	margin: 0;
+}
+.footer__link {
+	font-size: 14px;
+	color: #000;
+	text-decoration: underline;
+}
